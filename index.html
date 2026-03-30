@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Açaí na Hora</title>
+  <meta
+    name="description"
+    content="Peça seu açaí na hora. Cardápio completo com tamanhos, adicionais, frutas e caldas. Entregamos em todo Mongaguá."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <span class="badge">AÇAÍ TRADICIONAL</span>
+      <h1>Açaí na Hora</h1>
+      <p>
+        Monte seu pedido do jeito que quiser e finalize direto no WhatsApp.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+        <a
+          href="https://wa.me/5513996630337?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20de%20a%C3%A7a%C3%AD."
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="delivery-bar">
+      <div class="container delivery-content">
+        <div>
+          <strong>Entregamos em todo Mongaguá</strong>
+          <p>Pedido rápido, direto e sem enrolação.</p>
+        </div>
+        <div class="pix-box">
+          <span>PIX:</span>
+          <strong id="pix-chave">13996630337</strong>
+          <button class="copy-btn" onclick="copiarPix()">Copiar PIX</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nosso cardápio</h2>
+          <p>Escolha o tamanho ideal e monte seu açaí.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="product-card">
+            <div class="product-top">
+              <span class="size-tag">P 200ML</span>
+              <span class="price">R$ 12,00</span>
+            </div>
+            <ul>
+              <li>2 adicionais</li>
+              <li>1 fruta</li>
+              <li>1 calda</li>
+            </ul>
+            <button
+              class="order-btn"
+              onclick="pedirWhatsApp('P 200ML - R$ 12,00')"
+            >
+              Pedir este
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="size-tag">M 300ML</span>
+              <span class="price">R$ 15,00</span>
+            </div>
+            <ul>
+              <li>3 adicionais</li>
+              <li>1 fruta</li>
+              <li>1 calda</li>
+            </ul>
+            <button
+              class="order-btn"
+              onclick="pedirWhatsApp('M 300ML - R$ 15,00')"
+            >
+              Pedir este
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="size-tag">G 500ML</span>
+              <span class="price">R$ 22,00</span>
+            </div>
+            <ul>
+              <li>4 adicionais</li>
+              <li>2 frutas</li>
+              <li>1 calda</li>
+            </ul>
+            <button
+              class="order-btn"
+              onclick="pedirWhatsApp('G 500ML - R$ 22,00')"
+            >
+              Pedir este
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="size-tag">BIG 770ML</span>
+              <span class="price">R$ 27,00</span>
+            </div>
+            <ul>
+              <li>5 adicionais</li>
+              <li>2 frutas</li>
+              <li>2 caldas</li>
+            </ul>
+            <button
+              class="order-btn"
+              onclick="pedirWhatsApp('BIG 770ML - R$ 27,00')"
+            >
+              Pedir este
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="size-tag">MEGA 1.100ML</span>
+              <span class="price">R$ 35,00</span>
+            </div>
+            <ul>
+              <li>7 adicionais</li>
+              <li>2 frutas</li>
+              <li>3 caldas</li>
+            </ul>
+            <button
+              class="order-btn"
+              onclick="pedirWhatsApp('MEGA 1.100ML - R$ 35,00')"
+            >
+              Pedir este
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container info-grid">
+        <article class="info-card">
+          <h3>Adicionais</h3>
+          <ul class="list">
+            <li>Leite Ninho</li>
+            <li>M&amp;M</li>
+            <li>Sucrilhos</li>
+            <li>Chocoball</li>
+            <li>Paçoca</li>
+            <li>Granola</li>
+            <li>Granulado</li>
+            <li>Amendoim</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Caldas</h3>
+          <ul class="list">
+            <li>Chocolate</li>
+            <li>Morango</li>
+            <li>Leite condensado</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Frutas</h3>
+          <ul class="list">
+            <li>Banana</li>
+            <li>Uva</li>
+            <li>Morango</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Extras pagos</h3>
+          <ul class="list">
+            <li>Nutella: R$ 5,00</li>
+            <li>Acompanhamento adicional: R$ 2,00</li>
+            <li>Fruta adicional: R$ 2,00</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container order-box">
+        <div>
+          <h2>Finalize seu pedido</h2>
+          <p>
+            Clique no botão abaixo e envie seu pedido direto no WhatsApp.
+          </p>
+        </div>
+
+        <a
+          href="https://wa.me/5513996630337?text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido%20de%20a%C3%A7a%C3%AD."
+          class="btn btn-primary big-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Fazer pedido agora
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h3>Açaí na Hora</h3>
+        <p>Entregamos em todo Mongaguá.</p>
+      </div>
+
+      <div class="footer-actions">
+        <a
+          href="https://wa.me/5513996630337"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp: (13) 99663-0337
+        </a>
+        <span>PIX: 13996630337</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
